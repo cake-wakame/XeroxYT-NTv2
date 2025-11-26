@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
   <head>
-    <meta charset="UTF--8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>XeroxYT-NT</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,24 +40,12 @@
     <link rel="icon" href="https://www.youtube.com/s/desktop/03dd36f0/img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/03dd36f0/img/favicon.ico" type="image/x-icon">
     <script>
-      // Prevent FOUC by applying theme from localStorage before React loads
       if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
         document.documentElement.classList.add('dark');
       } else {
         document.documentElement.classList.remove('dark');
       }
     </script>
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
-    "react": "https://aistudiocdn.com/react@^19.1.1",
-    "react/": "https://aistudiocdn.com/react@^19.1.1/",
-    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^6.25.1",
-    "uuid": "https://aistudiocdn.com/uuid@^13.0.0"
-  }
-}
-</script>
 </head>
   <body class="bg-yt-white dark:bg-yt-black text-black dark:text-yt-white font-sans">
     <div id="root"></div>
